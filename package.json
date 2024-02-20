@@ -1,0 +1,17 @@
+{
+  "name": "tail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "concurrently \" http-server ./public -c-1 \" \"tailwindcss -o ./public/main.css --watch\"",
+    "build": "tailwindcss -o ./public/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "http-server": "^14.1.1",
+    "tailwindcss": "^3.4.1"
+  }
+}
